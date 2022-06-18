@@ -1,5 +1,6 @@
 package chapter5
 
+
 fun main() {
     println(listOfPerson.filter { it.age % 2 == 0 })
     println(listOfPerson.map { it.age * 2 })

@@ -1,6 +1,6 @@
 package chapter5
 
-val listOfPerson = listOf(Person("Alice", 23) , Person("Kagura",18))
+val listOfPerson = listOf(Person("Alice", 23) , Person("Kagura",17))
 
 fun main() {
     val sum = { x: Int, y: Int -> x + y }
