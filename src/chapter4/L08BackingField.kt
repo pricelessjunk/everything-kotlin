@@ -15,4 +15,9 @@ class User3(val name: String) {
 
 fun main() {
     User3("name").address = "something"
+
+
+    val u = User3("name")
+    u.address = "something2"
+    u.address = "something3"
 }
