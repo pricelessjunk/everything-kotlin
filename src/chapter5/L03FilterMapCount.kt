@@ -6,6 +6,6 @@ fun main() {
     println(listOfPerson.map { it.age * 2 })
 
     // maps
-    val numbers = mapOf(0 to "zero", 1 to "one")
-    println(numbers.mapValues { it.value.uppercase() })
+    val numberMap = mapOf(0 to "zero", 1 to "one")
+    println(numberMap.mapValues { it.value.uppercase() })
 }
