@@ -1,0 +1,10 @@
+# Number of people
+2
+
+# Names of people
+Kaustuv
+Aditi
+
+# Transactions
+18.75 1 even
+8.20 1 even
