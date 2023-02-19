@@ -6,21 +6,48 @@
 - **Operator overloading**
 
 ```
-* Operator overloading can be done with the following method names -
-*
-* a * b times
-* a / b div
-* a % b mod
-* a + b plus
-* a - b minus
-*
-* precedence still follows the default rule. Also applies to unary operator
-*
-* +a      unaryPlus
-* -a      unaryMinus
-* !a      not
-* ++a, a++ inc
-* --a, a-- dec
+Operator overloading can be done with the following method names -
+
+a * b times
+a / b div
+a % b mod
+a + b plus
+a - b minus
+a..b  a.rangeTo(b)
+
+precedence still follows the default rule. Also applies to unary operator
+
++a      unaryPlus
+-a      unaryMinus
+!a      not
+++a, a++ inc
+--a, a-- dec
+ 
+a += b      a.plusAssign(b)
+a -= b      a.minusAssign(b)
+a *= b      a.timesAssign(b)
+a /= b      a.divAssign(b)
+a %= b      a.remAssign(b)
+
+
+a[i]                    a.get(i)
+a[i, j]                 a.get(i, j)
+a[i_1, ..., i_n]        a.get(i_1, ..., i_n)
+a[i] = b                a.set(i, b)
+a[i, j] = b             a.set(i, j, b)
+a[i_1, ..., i_n] = b    a.set(i_1, ..., i_n, b)
+
+a in b    b.contains(a)
+a !in b   !b.contains(a)
+
+a == b    a?.equals(b) ?: (b === null)
+a != b    !(a?.equals(b) ?: (b === null))
+
+Paranthesis are converted into invokes
+a()               a.invoke()
+a(i)              a.invoke(i)
+a(i, j)           a.invoke(i, j)
+a(i_1, ..., i_n)  a.invoke(i_1, ..., i_n)
 ```
 
 - A **Higher Order Function** is a function that takes another function as an argument or returns one.
