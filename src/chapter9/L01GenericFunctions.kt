@@ -3,7 +3,9 @@ package chapter9
 import chapter3.list
 
 /**
- * This extended function returns a sub list of the given list
+ * This extended function that returns a sub list of the given list
+ *
+ * <T> is called the type parameter declaration.
  */
 fun <T> List<T>.slice(intRange: IntRange) : List<T> {
     return this.subList(intRange.first, intRange.last)
