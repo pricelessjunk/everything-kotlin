@@ -1,7 +1,11 @@
 package chapter4
 
+
 /**
- * In case of interfaces : A member in an interface is always open; you can’t declare it as final. It’s abstract if
+ * Open classes and methods in Kotlin are equivalent to the opposite of final in Java, an open method is overridable and an open class is extendable in Kotlin.
+ *
+ *
+ * In case of interfaces or abstract classes : A member in an interface is always open; you can’t declare it as final. It’s abstract if
  * it has no body, but the keyword isn’t required.
  */
 abstract class Animated {

@@ -12,7 +12,7 @@ val map = hashMapOf(1 to "One", 7 to "Seven", 10 to "ten")
 /**
  * Extra methods in the kotlin list, set and map
  */
-fun main(args : Array<String>) {
+fun main() {
     // List operations
     println(list.last()) // 10
     println(list)           // invokes toString
