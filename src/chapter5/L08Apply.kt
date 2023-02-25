@@ -26,6 +26,6 @@ class A {
 /**
  * this function basically an instance of A() after printing the line.
  */
-fun s() = A().apply() {
+fun s() = A().apply {
     println("in lambda apply")
 }

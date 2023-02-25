@@ -1,9 +1,9 @@
 package chapter10
 
-var counter = 0
+var reflectionproperty = 0
 
 fun main() {
-    val kProperty = ::counter
+    val kProperty = ::reflectionproperty
     kProperty.setter.call(21)
     println(kProperty.get())
 }

@@ -15,7 +15,7 @@ fun foo(x: Int) = println(x)
  * arguments: it won’t compile. Therefore, if you have a KFunction of a specific type,
  * with known parameters and return type, it’s preferable to use its invoke method.
  */
-fun sum(x: Int, y: Int)=x+y
+fun sum(x: Int, y: Int)=x + y
 
 fun main() {
     val kFunction = ::foo
