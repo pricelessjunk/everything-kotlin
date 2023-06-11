@@ -9,7 +9,7 @@ import java.util.ServiceLoader
 // fun <T> isA(value: Any) = value is T
 
 /**
- * This works.
+ * This works. Because reified T's class information is stored.
  */
 inline fun <reified T> isA(value: Any) = value is T
 
