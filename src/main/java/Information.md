@@ -52,6 +52,8 @@ a(i_1, ..., i_n)  a.invoke(i_1, ..., i_n)
 
 - A **Higher Order Function** is a function that takes another function as an argument or returns one.
 
+- **Single Abstract Method (SAM)** is basically **Functional Interface** ie, an interface with one abstract method.
+
 - **Type parameters** Lets a generic class what type to use. For example, `List<String>` has a type paramter `String`.
 
 - **Type arguments** When an instance of a class with type parameters are instantiated, they are replaced with the type

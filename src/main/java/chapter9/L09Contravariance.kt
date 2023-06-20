@@ -7,13 +7,15 @@ import kotlin.String
  * Contravariance means if A is parent of B, Generic<B> is parent of Generic<A>
  */
 /**
- * This is the definition of kotlin.Comparator
+ * This is the definition of kotlin.Comparator. Since, SAM is not supported on Kotlin interfaces yet, using the Java one.
  */
+/*
 interface MyComparator<in T> {
     fun compare(e1: T, e2: T): Int {
         return e1.hashCode() - e2.hashCode()
     }
 }
+*/
 
 val anyComparator = Comparator<Any> { e1, e2 ->
     e1.hashCode() - e2.hashCode()

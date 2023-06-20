@@ -30,6 +30,7 @@ class Cat : Animal() {
 class Herd<out T : Animal> {
     val animals: List<T> = listOf()
     val size: Int get() = animals.size
+
     operator fun get(i: Int): T {
         return animals.get(i)
     }

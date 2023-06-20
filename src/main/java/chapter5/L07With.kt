@@ -1,6 +1,6 @@
 package chapter5
 
-import java.lang.StringBuilder
+import kotlin.text.StringBuilder
 
 fun main() {
 
