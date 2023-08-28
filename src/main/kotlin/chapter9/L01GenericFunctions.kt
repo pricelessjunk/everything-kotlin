@@ -1,7 +1,5 @@
 package chapter9
 
-import chapter3.list
-
 /**
  * This extended function that returns a sub list of the given list
  *

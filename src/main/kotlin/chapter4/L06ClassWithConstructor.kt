@@ -1,7 +1,5 @@
 package chapter4
 
-import javax.naming.Context
-
 
 /**
  * If all the constructor parameters have default values, the compiler gen-

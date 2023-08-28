@@ -1,4 +1,4 @@
-package `try`
+package general.expensesplitter
 
 import java.io.File
 

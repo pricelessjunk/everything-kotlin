@@ -1,7 +1,5 @@
 package chapter10
 
-import kotlin.reflect.KFunction
-
 /**
  * KCallable is a superinterface for functions and properties. It
  * declares the call method, which allows you to call the corresponding function or the

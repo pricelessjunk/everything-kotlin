@@ -1,4 +1,4 @@
-package general.try1
+package tries
 
 fun main() {
     something {
