@@ -16,10 +16,9 @@ repositories {
 }
 
 dependencies {
-	/*implementation("org.springframework.boot:spring-boot-starter")
-	implementation("org.jetbrains.kotlin:kotlin-reflect")
-	testImplementation("org.springframework.boot:spring-boot-starter-test")*/
 	implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.7.1")
+	implementation("org.apache.httpcomponents.client5:httpclient5:5.2.1")
+	implementation("com.fasterxml.jackson.module:jackson-module-kotlin:2.12.1")
 }
 
 tasks.withType<KotlinCompile> {
