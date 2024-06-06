@@ -12,6 +12,7 @@ import kotlinx.coroutines.runBlocking
 fun main() {
     runBlocking {
         val job = launch { // launch a new coroutine and keep a reference to its Job
+            println("this")
             delay(1000L)
             println("World!")
         }

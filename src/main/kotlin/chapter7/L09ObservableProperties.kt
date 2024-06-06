@@ -1,4 +1,4 @@
-package chapter7
+ package chapter7
 
 import kotlin.properties.Delegates
 
@@ -15,6 +15,6 @@ class Person3() {
 fun main() {
     val p = Person3()
     println(p.age) // prints -1
-    p.age = 20
     println(p.age) // prints 20
+    p.age = 20
 }

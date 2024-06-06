@@ -6,6 +6,12 @@ package chapter5
  */
 fun main() {
     createAllDoneRunnable().run()
+
+    // A true functional interface
+    val aFunctionalInterface = AFunctionalInterface {
+        it + 1
+    }
+    aFunctionalInterface.someMethod(2)  // returns 3
 }
 
 fun createAllDoneRunnable(): Runnable {
@@ -25,5 +31,27 @@ interface SomeKotlinInterface {
 val someLambda = object : SomeKotlinInterface {
     override fun someMethod() {
         TODO("Not yet implemented")
+    }
+}
+
+/**
+ * Using `fun` to declare a true functional interface
+ * Used in main
+ */
+fun interface AFunctionalInterface {
+    fun someMethod(input: Int): Int
+}
+
+fun interface UpperInterface<K> {
+    fun someMethod(input: Int): Int
+}
+
+public fun interface AFunGenInterface<K> : UpperInterface<K> {
+    // This is the method for this functional interface
+    public fun K.someThing()
+
+    // This one implements the UpperInterface.someMethod
+    override fun someMethod(input: Int): Int {
+        return input + 1
     }
 }

@@ -6,7 +6,7 @@ class KotlinDependencyHandler {
     }
 
     /**
-     * The invoke function defines the support for DSL API. It basically recieves
+     * The invoke function defines the support for DSL API. It basically receives
      * a function of class type KotlinDependencyHandler
      * and just calls the function again. In our example, it is the compile method.
      */

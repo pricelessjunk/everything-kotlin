@@ -11,11 +11,11 @@ via parameterless constructors.
 class User(val nickname: String)
 
 // Same as
-class UserAlternative constructor(_nickname: String) {
+class UserAlternative constructor(nickname: String) {
     val nickname: String
 
     init {          // Initializes at object creation
-        nickname = _nickname
+        this.nickname = nickname
     }
 }
 
@@ -47,7 +47,7 @@ open class Parent {
 
 class Child : Parent {
     constructor(c : String) : super(c) {
-        println("In child")     // Super contructor gets called first
+        println("In child")     // Super constructor gets called first
     }
 
     constructor(a: Int) : this(a,"delegated") {  // Delegates to the bottom constructor
@@ -61,6 +61,11 @@ class Child : Parent {
 
 fun main() {
     Child("lala")
+    //In super lala
+    //In child
 
     Child(1)
+    //In super delegated
+    //After delegation a 1
+    //After return from delegation a 1
 }

@@ -19,7 +19,7 @@ fun original() : String {
  */
 fun withWith() : String {
     return with(StringBuilder()) {
-        this.append("s")
+        append("s")
         this.append("b")
         this.toString()
     }
